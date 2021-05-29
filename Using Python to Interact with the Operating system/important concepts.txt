@@ -1,0 +1,30 @@
+method vs function:
+1) function:
+def functionName( arg1, arg2,….):
+   …….
+   # Function_body
+   ……..
+
+2) method is associated with object/classes
+class ClassName:
+   def method_name():
+      …………..
+      # Method_body
+      ………………
+class Pet(object):
+   def my_method(self):
+      print("I am a Cat")
+cat = Pet()
+cat.my_method(
+
+
+
+
+
+
+
+
+
+
+
+
