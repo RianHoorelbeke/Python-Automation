@@ -1,0 +1,8 @@
+cd ~/scripts --> Open directory scripts from home directory
+ls --> list files in directory
+cat filename.py --> view contents
+
+#!/usr/bin/env python3 --> shebang: autom python run
+sudo chmod +x filename.py --> add execute permission to file
+
+import module
