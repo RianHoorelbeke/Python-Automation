@@ -1,0 +1,43 @@
+Week 5 Testing:
+
+software testing: The process of evaluating computer code to determine whether or not it does what it expects to do
+
+manuel testing: for example, executing a script with different command line arguments to see how its behaviour changed
+
+automatic testing: automate the process of checking if the returned value matches the expectations (--> test cases)
+
+Unit tests: Verify that small, isolated parts of a program are correct 
+import unittest
+
+function_test.py:
+from module import function (--> isolation)
+import unittest
+
+class TestFunction(unittest.TestCase):
+  def test_basic(self):
+    testcase = "lovelace, Ada"
+    expected = "Ada Lovelace"
+    self.assertEqual(function(testcase), expected)
+
+Edge cases: Inputs that produce unexpected results, found at the extreme ends of the ranges of input our program works in
+  def test_empty(self):
+    testcase = ""
+    expected = ""
+    self.assertEqual(function(testcase), expected)
+  
+  def test_double_name(self):
+    testcase = "Hopper, Grace M."
+    expected = "Grace M. Hopper"
+    self.assertEqual(function(testcase), expected)
+  
+  def test_one_name(self):
+    testcase = "Voltaire"
+    expected = "Voltaire"
+    self.assertEqual(function(testcase), expected)
+
+unittest.main()
+
+
+
+
+
